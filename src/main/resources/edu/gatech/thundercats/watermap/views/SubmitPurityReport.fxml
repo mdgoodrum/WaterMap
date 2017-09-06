@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.gatech.thundercats.watermap.application.SubmitPurityReportController">
+   <children>
+      <VBox layoutX="14.0" layoutY="15.0" prefHeight="194.0" prefWidth="251.0">
+         <children>
+            <TextField fx:id="titleField" promptText="Title">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="latField" promptText="Latitude">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="longField" promptText="Longitude">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="contaminantPPMField" promptText="Contaminant PPM">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="virusPPMField" promptText="Virus PPM">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+         </children></VBox>
+      <VBox layoutX="400.0" layoutY="15.0" prefHeight="112.0" prefWidth="186.0">
+         <children>
+            <ComboBox fx:id="conditionComboBox" prefHeight="30.0" prefWidth="240.0" promptText="Select Condition">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></ComboBox>
+         </children>
+      </VBox>
+      <TextArea fx:id="descriptionField" layoutX="13.0" layoutY="216.0" prefHeight="135.0" prefWidth="574.0" promptText="Description (optional)" />
+      <Button layoutX="132.0" layoutY="360.0" mnemonicParsing="false" onAction="#returnButtonClicked" text="Return" />
+      <Button layoutX="379.0" layoutY="360.0" mnemonicParsing="false" onAction="#submitButtonClicked" text="Submit Report" />
+   </children>
+</AnchorPane>

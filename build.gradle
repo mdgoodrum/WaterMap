@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'com.airhacks:afterburner.fx:latest.release'
+    compile 'com.google.code.gson:gson:latest.release'
+    compile 'com.lynden:GMapsFX:latest.release'
+    compile 'com.mashape.unirest:unirest-java:latest.release'
+    compile 'de.jensd:fontawesomefx:latest.release'
+    compile 'com.google.guava:guava:19.0'
+    testCompile 'junit:junit:4.11'
+    testCompile "org.testfx:testfx-junit:4.0.+"
+    testCompile "org.loadui:testFx:3.1.2"
+}
+
+mainClassName = 'edu.gatech.thundercats.watermap.Main'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.1'
+}

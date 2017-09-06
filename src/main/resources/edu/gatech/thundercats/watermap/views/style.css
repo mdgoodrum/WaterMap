@@ -1,0 +1,100 @@
+.root {
+    -fx-background: #f7f7f7;
+    -fx-font-size: 14px;
+}
+
+.brand-heading {
+    -fx-font-size: 48px;
+}
+
+.label {
+    -fx-text-fill: #373a3c;
+}
+.error-msg {
+    -fx-text-fill: #d9534f;
+}
+.success-msg {
+    -fx-text-fill: #5cb85c;
+}
+
+.text-field {
+    -fx-background-color: #fff;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 4;
+}
+.text-field:focused {
+    -fx-border-color : #66afe9;
+}
+
+/* Buttons */
+.button {
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-background-insets: 0;
+    -fx-cursor: hand;
+}
+.button-primary {
+    -fx-text-fill: #fff;
+    -fx-background-color: #0275d8;
+    -fx-border-color: #0275d8;
+}
+.button-primary:hover {
+    -fx-text-fill: #fff;
+    -fx-background-color: #025aa5;
+    -fx-border-color: #01549b;
+}
+.button-primary:armed {
+    -fx-text-fill: #fff;
+    -fx-background-color: #014682;
+    -fx-border-color: #01315a;
+}
+.button-secondary {
+    -fx-text-fill: #373a3c;
+    -fx-background-color: #fff;
+    -fx-border-color: #ccc;
+}
+.button-secondary:hover {
+    -fx-text-fill: #373a3c;
+    -fx-background-color: #e6e6e6;
+    -fx-border-color: #adadad;
+}
+.button-secondary:armed {
+    -fx-text-fill: #373a3c;
+    -fx-background-color: #d4d4d4;
+    -fx-border-color: #8c8c8c;
+}
+
+/* Combo Box */
+.combo-box {
+    -fx-background-color: #fff;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-background-insets: 0;
+    -fx-cursor: hand;
+}
+.combo-box:hover {
+    -fx-background-color: #e6e6e6;
+    -fx-border-color: #adadad;
+}
+.combo-box:showing {
+    -fx-background-color: #d4d4d4;
+    -fx-border-color: #8c8c8c;
+}
+.combo-box-popup > .list-view {
+    -fx-border-color: #ccc;
+    -fx-padding: 4 0;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-background-insets: 0;
+}
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell {
+    /*-fx-background-color: #0f0;*/
+    -fx-text-fill: #373a3c;
+}
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:hover,
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:selected {
+    -fx-text-fill: #2b2d2f;
+    -fx-background-color: #f5f5f5;
+}
+
